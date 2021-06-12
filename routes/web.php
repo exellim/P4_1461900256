@@ -22,7 +22,6 @@ Route::get('/', function () {
 Route::resource('/buku0256', 'App\Http\Controllers\bukuc');
 Route::get('buku0256/{id}', [ 'as' => 'buku0256.edit', 'uses' => 'App\Http\Controllers\bukuc@edit']);
 Route::post('buku0256/update/{id}', [ 'as' => 'buku0256.update', 'uses' => 'App\Http\Controllers\bukuc@update']);
-//Route::get('/buku0256/export_excel', 'App\Http\Controllers\bukuc@export_excel');
 Route::post('buku0256/export_excel', [ 'as' => 'buku0256.export_excel', 'uses' => 'App\Http\Controllers\bukuc@export_excel']);
 Route::post('buku0256/delete/{id}', [ 'as' => 'buku0256.destroy', 'uses' => 'App\Http\Controllers\bukuc@destroy']);
 Route::get('/bukuc/export_excel', 'App\Http\Controllers\bukuc@export_excel');

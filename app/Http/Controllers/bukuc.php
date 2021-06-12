@@ -21,7 +21,7 @@ class bukuc extends Controller
     public function index()
     {
         $buku = bukum::all();
-        $buku = DB::table('buku')->join('jenis_buku', 'jenis_buku.id', '=', 'buku.id') ->get(); //Join Judul buku dengan Nama Kategori
+        $buku = DB::table('buku')->join('jenis_buku', 'jenis_buku.id', '=', 'buku.id') ->get();
         return view('buku0256', ['kirim'=> $buku]);
     }
 
